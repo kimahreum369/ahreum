@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM AH REUM - 품질보증 포트폴리오 허브</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff5f5',
+                            100: '#fed7d7',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg tracking-tight text-slate-900">
+                KIM AH REUM <span class="text-brand-600 text-xs font-semibold ml-1">QA Portfolio</span>
+            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition-colors">소개</a>
+                <a href="#competencies" class="hover:text-brand-600 transition-colors">역량</a>
+                <a href="#results" class="hover:text-brand-600 transition-colors">결과물</a>
+                <a href="#contact" class="hover:text-brand-600 transition-colors">연락</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow">
+        
+        <!-- 1. Hero / 첫 화면 Section -->
+        <section class="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-100 bg-slate-50/50">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block px-3 py-1 bg-brand-50 text-brand-700 border border-brand-100 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                    Secondary Battery & Chemical Materials QA
+                </div>
+                <!-- 이름 -->
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    KIM AH REUM
+                </h1>
+                <!-- 한 줄 메시지 -->
+                <p class="text-lg sm:text-xl font-bold text-slate-900 leading-snug mb-3">
+                    정밀 데이터 분석과 시운전 경험으로 정확하고 신속한 품질 판단을 이끄는 품질보증 전문가
+                </p>
+                <!-- 근거 경험 한 줄 -->
+                <p class="text-base text-slate-600 mb-8 max-w-2xl mx-auto">
+                    신규 공정 시운전 참여 및 시료 데이터 축적을 통한 초기 운전 기준 검토 지원
+                </p>
+                <!-- 결과물 보기 버튼 -->
+                <div>
+                    <a href="#results" class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-brand-600 rounded-lg shadow-md hover:bg-brand-700 active:scale-95 transition-all duration-200 group">
+                        결과물 보기
+                        <i class="fa-solid fa-arrow-down ml-2 text-sm group-hover:translate-y-0.5 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About / 소개 Section -->
+        <section id="about" class="py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-1">About</h2>
+                <h3 class="text-xl font-bold text-slate-900 mb-6">소개</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- 전공 정보 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 mb-3">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 block mb-1">학력 / 전공</span>
+                        <h4 class="text-base font-bold text-slate-900">화학소재융합학부 소재디자인공학</h4>
+                    </div>
+                    
+                    <!-- 관심 분야 정보 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 mb-3">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 block mb-1">관심 분야</span>
+                        <h4 class="text-base font-bold text-slate-900">품질보증 / 품질관리</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Capabilities / 역량 및 기여 방안 Section -->
+        <section id="competencies" class="py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-100 bg-slate-50/50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-1">Capabilities</h2>
+                <h3 class="text-xl font-bold text-slate-900 mb-6">역량 및 기여 방안</h3>
+
+                <!-- PC 3열, 모바일 1열 그리드 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- 역량 1 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <span class="w-7 h-7 rounded-md bg-brand-50 text-brand-600 font-bold text-sm flex items-center justify-center shrink-0 mr-2.5">1</span>
+                                <h4 class="text-base font-bold text-slate-900">ICP-OES 분석 재현성 개선</h4>
+                            </div>
+                            <p class="text-base text-slate-600 mb-5 leading-relaxed">전처리 및 측정 조건 최적화를 통한 데이터 신뢰성 확보</p>
+                        </div>
+                        <!-- 기여 방안 (글자 크기 14px / text-sm 적용) -->
+                        <div class="bg-slate-50 p-3.5 rounded-lg border-l-4 border-brand-600 mt-auto">
+                            <div class="flex items-center text-brand-700 font-bold text-xs uppercase tracking-wide mb-1">
+                                <i class="fa-solid fa-check mr-1.5 text-xs"></i>
+                                <span>기여 방안</span>
+                            </div>
+                            <p class="text-sm text-slate-700 leading-relaxed">분석 데이터의 신뢰성을 극대화하여 품질 검사의 정확도를 높이겠습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 역량 2 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <span class="w-7 h-7 rounded-md bg-brand-50 text-brand-600 font-bold text-sm flex items-center justify-center shrink-0 mr-2.5">2</span>
+                                <h4 class="text-base font-bold text-slate-900">Cl 시험법 절차 정리</h4>
+                            </div>
+                            <p class="text-base text-slate-600 mb-5 leading-relaxed">외부 공인기관 학습 기반 사내 분석 체계 확보 및 절차 문서화</p>
+                        </div>
+                        <!-- 기여 방안 (글자 크기 14px / text-sm 적용) -->
+                        <div class="bg-slate-50 p-3.5 rounded-lg border-l-4 border-brand-600 mt-auto">
+                            <div class="flex items-center text-brand-700 font-bold text-xs uppercase tracking-wide mb-1">
+                                <i class="fa-solid fa-check mr-1.5 text-xs"></i>
+                                <span>기여 방안</span>
+                            </div>
+                            <p class="text-sm text-slate-700 leading-relaxed">신규 분석 체계를 조기에 구축하여 시험 분석 소요 기간을 단축하겠습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 역량 3 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center mb-2">
+                                <span class="w-7 h-7 rounded-md bg-brand-50 text-brand-600 font-bold text-sm flex items-center justify-center shrink-0 mr-2.5">3</span>
+                                <h4 class="text-base font-bold text-slate-900">이상 원료 품질 영향 분석</h4>
+                            </div>
+                            <p class="text-base text-slate-600 mb-5 leading-relaxed">오입고 원료 분석 및 재처리·블렌딩 대안 제안으로 부적합품 출하 방지</p>
+                        </div>
+                        <!-- 기여 방안 (수정된 문구 및 글자 크기 14px / text-sm 적용) -->
+                        <div class="bg-slate-50 p-3.5 rounded-lg border-l-4 border-brand-600 mt-auto">
+                            <div class="flex items-center text-brand-700 font-bold text-xs uppercase tracking-wide mb-1">
+                                <i class="fa-solid fa-check mr-1.5 text-xs"></i>
+                                <span>기여 방안</span>
+                            </div>
+                            <p class="text-sm text-slate-700 leading-relaxed">품질 문제 발생 시 원인 분석 및 대안 제안으로 불량 납품을 방지하겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Results Grid / 결과물 Section -->
+        <section id="results" class="py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-100">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6">
+                    <div>
+                        <h2 class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-1">Results</h2>
+                        <h3 class="text-xl font-bold text-slate-900">결과물 허브</h3>
+                    </div>
+                    <p class="text-sm text-slate-500 mt-1 sm:mt-0">매일 순차적으로 작성될 결과물 공간입니다.</p>
+                </div>
+
+                <!-- PC 3열, 모바일 1열 그리드 (카드 5칸) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    
+                    <!-- Day 2 카드 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+                            <h4 class="text-base font-bold text-slate-900">Day 2 결과물 자리</h4>
+                            <span class="text-xs px-2 py-0.5 bg-slate-100 text-slate-500 rounded font-medium">대기 중</span>
+                        </div>
+                        <div class="space-y-2 text-base text-slate-700">
+                            <p><strong class="text-slate-900 font-semibold">문제:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">사용 기술:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">결과:</strong> </p>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 카드 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+                            <h4 class="text-base font-bold text-slate-900">Day 3 결과물 자리</h4>
+                            <span class="text-xs px-2 py-0.5 bg-slate-100 text-slate-500 rounded font-medium">대기 중</span>
+                        </div>
+                        <div class="space-y-2 text-base text-slate-700">
+                            <p><strong class="text-slate-900 font-semibold">문제:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">사용 기술:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">결과:</strong> </p>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 카드 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+                            <h4 class="text-base font-bold text-slate-900">Day 4 결과물 자리</h4>
+                            <span class="text-xs px-2 py-0.5 bg-slate-100 text-slate-500 rounded font-medium">대기 중</span>
+                        </div>
+                        <div class="space-y-2 text-base text-slate-700">
+                            <p><strong class="text-slate-900 font-semibold">문제:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">사용 기술:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">결과:</strong> </p>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 카드 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+                            <h4 class="text-base font-bold text-slate-900">Day 5 결과물 자리</h4>
+                            <span class="text-xs px-2 py-0.5 bg-slate-100 text-slate-500 rounded font-medium">대기 중</span>
+                        </div>
+                        <div class="space-y-2 text-base text-slate-700">
+                            <p><strong class="text-slate-900 font-semibold">문제:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">사용 기술:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">결과:</strong> </p>
+                        </div>
+                    </div>
+
+                    <!-- Day 6 카드 -->
+                    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+                            <h4 class="text-base font-bold text-slate-900">Day 6 결과물 자리</h4>
+                            <span class="text-xs px-2 py-0.5 bg-slate-100 text-slate-500 rounded font-medium">대기 중</span>
+                        </div>
+                        <div class="space-y-2 text-base text-slate-700">
+                            <p><strong class="text-slate-900 font-semibold">문제:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">내가 한 일:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">사용 기술:</strong> </p>
+                            <p><strong class="text-slate-900 font-semibold">결과:</strong> </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact / 연락 Section -->
+        <section id="contact" class="py-12 px-4 sm:px-6 lg:px-8 bg-slate-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-1">Contact</h2>
+                <h3 class="text-xl font-bold text-slate-900 mb-6">연락처</h3>
+                <div>
+                    <a href="mailto:ahreum_-_@naver.com" class="inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-brand-600 rounded-lg shadow-md hover:bg-brand-700 active:scale-95 transition-all duration-200">
+                        <i class="fa-regular fa-envelope mr-2.5"></i>
+                        ahreum_-_@naver.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-slate-200 bg-white text-center text-xs text-slate-400">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© KIM AH REUM. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
